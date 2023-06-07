@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #e6eff5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  max-width: 311px;
+}
+
+.community, .sub, .why {
+  padding: 24px;
+}
+
+.sub-hdr {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 26px;
+}
+
+.community {
+  background: white;
+}
+.community-hdr {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 16px;
+}
+.community-guarantee {
+  color: hsl(71, 73%, 54%);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.community-text {
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.sub {
+  background: hsl(179, 62%, 43%);
+  padding: 35px 24px;
+}
+.sub-price {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  gap: 0 11px;
+  margin: 0 0 20px;
+}
+.sub-price-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+.sub-text {
+  color: white;
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+.sub-button {
+  background: hsl(71, 73%, 54%);
+  border: 0 none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.why {
+  background: hsl(178, 48%, 52%);
+}
+.why ul {
+  list-style-type: none;
+}
+.why ul li {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template: repeat(2, min-content)/repeat(2, 50%);
+    max-width: 635px;
+  }
+  .community, .sub, .why {
+    padding: 40px;
+  }
+  .community {
+    grid-column: span 2;
+  }
+  .community-hdr {
+    font-size: 24px;
+  }
+  .community-guarantee {
+    margin: 0 0 11px;
+  }
+  .community-text {
+    font-size: 14px;
+  }
+  .sub {
+    padding: 40px;
+  }
+  .sub-hdr {
+    margin: 0 0 18px;
+  }
+  .sub-price {
+    margin: 0 0 6px;
+  }
+  .sub-button {
+    margin: 10px 0 0;
+  }
+  .sub-button:hover {
+    background: #91ac1b;
+    transition: background 0.5s ease;
+  }
+  .why ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
